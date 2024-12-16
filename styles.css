@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-slate-300: hsl(212, 45%, 89%);
+  --color-slate-500: hsl(216, 15%, 48%);
+  --color-slate-900: hsl(218, 44%, 22%);
+
+  --default-font-size-para: 15px;
+  --default-font-family: "Outfit";
+  --default-line-height: 140%;
+
+  --bold-font-weight: 600;
+  --bold-font-size-para: 22px;
+  --bold-line-height: 120%;
+
+  --spacing-small: 1rem;
+  --spacing-med: 1.5rem;
+  --spacing-large: 2.5rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  background-color: var(--color-slate-300);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.wrapper {
+  min-height: 98%;
+  padding: 0 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 320px;
+  background-color: var(--color-white);
+  padding: var(--spacing-small) var(--spacing-small) var(--spacing-large) var(--spacing-small) ;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.img-wrapper img {
+  max-width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.content-title {
+  font-family: var(--default-font-family);
+  font-size: var(--bold-font-size-para);
+  font-weight: var(--bold-font-weight);
+  line-height: var(--bold-line-height);
+  margin: var(--spacing-med) 0;
+}
+
+.content-description {
+  color: var(--color-slate-500);
+  font-family: var(--default-font-family);
+  font-size: var(--default-font-size-para);
+  line-height: var(--default-line-height);
+}
